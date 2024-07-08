@@ -17,9 +17,8 @@ $twig = new Environment($loader,[
 $tab = ["un","deux","trois","quatre"];
 
 // chargement d'un template se trouvant dans view
-echo $twig->render('test.html.twig',[
-    "message" => "Hello World!",
-    "tab" => $tab,
-]);
+
+
+echo $twig ->render(name:'public/public.homepage.html.twig');
 
 

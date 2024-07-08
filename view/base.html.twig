@@ -1,11 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% block language %}en{% endblock %} ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block titre %}{% endblock %}</title>
+    {% block stylesheet %}{% endblock %}
 </head>
 <body>
-    
+    {% block loader %}{% endblock %}
+    {% block header %}{% endblock %}
+    {% block hero %}{% endblock %}
+    {% block Latestnewssection %}{% endblock %}
+    {% block Featuresection %}{% endblock %}
+    {% block Recentgamesection %}{% endblock %}
+    {% block Tournamentssection %}{% endblock %}
+    {% block Reviewsection %}{% endblock %}
+    {% block Footertopsection %}{% endblock %}
+    {% block Footersection %}{% endblock %}
+    {% block Javascripts %}{% endblock %}
 </body>
 </html>
