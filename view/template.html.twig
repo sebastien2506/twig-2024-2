@@ -1,6 +1,12 @@
  {% extends "base.html.twig" %}
  {% block language %}fr{% endblock %}
  {% block titre %}boodstrap blog{% endblock %}
+  {% block meta %}
+ 	<meta charset="UTF-8">
+	<meta name="description" content="Game Warrior Template">
+	<meta name="keywords" content="warrior, game, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ {% endblock %}
  {% block stylesheet %}<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 	<!-- Google Fonts -->
@@ -39,15 +45,16 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="review.html">Games</a></li>
-					<li><a href="categories.html">Blog</a></li>
-					<li><a href="community.html">Forums</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="template.html.twig">Home</a></li>
+					<li><a href="review.html.twig">Games</a></li>
+					<li><a href="category.html.twig">Blog</a></li>
+					<li><a href="community.html.twig">Forums</a></li>
+					<li><a href="contact.html.twig">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>{% endblock %}
+
     {% block hero %}<section class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
@@ -80,6 +87,7 @@
 			</div>
 		</div>
 	</div>{% endblock %}
+
     {% block Featuresection %}<section class="feature-section spad">
 		<div class="container">
 			<div class="row">
@@ -126,6 +134,7 @@
 			</div>
 		</div>
 	</section>{% endblock %}
+
     {% block Recentgamesection %}<section class="recent-game-section spad set-bg" data-setbg="img/recent-game-bg.png">
 		<div class="container">
 			<div class="section-title">
@@ -184,6 +193,7 @@
 			</div>
 		</div>
 	</section>{% endblock %}
+
     {% block Tournamentssection %}<section class="tournaments-section spad">
 		<div class="container">
 			<div class="tournament-title">Tournaments</div>
@@ -227,6 +237,7 @@
 			</div>
 		</div>
 	</section>{% endblock %}
+
     {% block Reviewsection %}<section class="review-section spad set-bg" data-setbg="img/review-bg.png">
 		<div class="container">
 			<div class="section-title">
@@ -281,6 +292,7 @@
 			</div>
 		</div>
 	</section>{% endblock %}
+
     {% block Footertopsection %}<section class="footer-top-section">
 		<div class="container">
 			<div class="footer-top-bg">
@@ -362,6 +374,7 @@
 			</div>
 		</div>
 	</section>{% endblock %}
+
     {% block Footersection %}<footer class="footer-section">
 		<div class="container">
 			<ul class="footer-menu">
@@ -377,8 +390,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </p>
 		</div>
 	</footer>{% endblock %}
-    {% block Javascripts %}<script src="js/jquery-3.2.1.min.js"></script>
+
+    {% block Javascripts %}
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
-	<script src="js/main.js"></script>{% endblock %}
+	<script src="js/main.js"></script>
+	{% endblock %}
